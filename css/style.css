@@ -1,3 +1,53 @@
 .site-footer .block-simple-blockfooter-copyright {
   padding: 15px;
 }
+
+ul.sf-accordion li.sf-depth-1.menuparent ul {
+  border: none;
+  margin-top: 0px;
+}
+
+/* form */
+.form-text {
+    width: 100%;
+}
+
+/* fix teaser display when embeded in a content type */
+.node--view-mode-teaser {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+
+}
+
+.views-row {
+    padding-top: 1rem;
+}
+
+/* add space between two EVA views on one page */
+.views-element-container {
+    margin-bottom: 1rem;
+}
+
+/* make all labels bold */
+.field--type-entity-reference .field__label, .field--type-entity-reference ul.links {
+    font-weight: bold;
+
+}
+
+.field--label-inline {
+    margin-bottom: 1rem;
+}
+
+.field--name-field-manuscript .field {
+    margin-bottom: 1rem;
+}
+
+.field.field--name-field-manuscript.field--type-entity-reference.field--label-inline.clearfix {
+    margin: unset;
+}
+
+/* exposed form white background even when autocomplete*/
+.ui-autocomplete-input.form-text.form-autocomplete {
+    background: white;
+}
