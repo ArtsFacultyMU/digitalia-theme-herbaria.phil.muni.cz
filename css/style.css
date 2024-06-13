@@ -51,3 +51,11 @@ ul.sf-accordion li.sf-depth-1.menuparent ul {
 .ui-autocomplete-input.form-text.form-autocomplete {
     background: white;
 }
+
+/* search at top in mobile */
+@media (max-width: 768px) {
+    .layout-one-sidebar.layout-sidebar-first .layout-main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
