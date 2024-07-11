@@ -47,6 +47,22 @@ ul.sf-accordion li.sf-depth-1.menuparent ul {
     margin: unset;
 }
 
+.field--custom.views-row .views-field {
+    margin-bottom: 1rem;
+}
+
+.field--custom .views-field.views-field-field-institution {
+    display: flex;
+}
+
+.field--custom .views-field.views-field-field-dating-interval {
+    display: flex;
+}
+
+.field--custom .views-field.views-field-field-city {
+    display: flex;
+}
+
 /* exposed form white background even when autocomplete*/
 .ui-autocomplete-input.form-text.form-autocomplete {
     background: white;
@@ -58,4 +74,60 @@ ul.sf-accordion li.sf-depth-1.menuparent ul {
         display: flex;
         flex-direction: column-reverse;
     }
+}
+
+/* add definitions for terminology */
+
+.term-help:hover:before {
+    display: inline-block;
+    color: #000;position: absolute;
+    width: auto;height: auto;
+    background: #d6d6d6;
+    border-radius: 6px;
+    padding: 5px 8px;
+    font-weight: normal;
+    top: 70% ;/* margin-top: 5px; */
+    box-shadow: 0px 1px 10px 1px rgb(0 0 0 / 45%);
+}
+
+.term-help:hover {
+    cursor: help;
+    position: relative;
+}
+
+.term-help:after {
+    content: '?';
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    display: block;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.term-help {
+    position: relative;
+}
+
+html[lang="en"] .incipit-help:hover:before {
+    content: 'The beginning of the text';
+}
+
+html[lang="cs"] .incipit-help:hover:before {
+    content: 'Začátek textu';
+}
+
+html[lang="en"] .foliation-help:hover:before {
+    content: 'Page numbering used in manuscripts';
+}
+
+html[lang="cs"] .foliation-help:hover:before {
+    content: 'Číslování listů v rukopisech';
+}
+
+/* do not display title on front page */
+body.path-frontpage h1.title.page-title {
+    display: none;
 }
