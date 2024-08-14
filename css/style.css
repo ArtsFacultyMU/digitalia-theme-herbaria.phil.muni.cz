@@ -63,6 +63,9 @@ ul.sf-accordion li.sf-depth-1.menuparent ul {
     display: flex;
 }
 
+.field--custom .views-field.views-field-field-dating {
+    display: flex;
+}
 /* exposed form white background even when autocomplete*/
 .ui-autocomplete-input.form-text.form-autocomplete {
     background: white;
@@ -130,4 +133,9 @@ html[lang="cs"] .foliation-help:hover:before {
 /* do not display title on front page */
 body.path-frontpage h1.title.page-title {
     display: none;
+}
+
+/* let users use italic in text edit forms */
+em {
+	font-style: italic;
 }
