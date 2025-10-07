@@ -155,3 +155,6 @@ em {
     flex: 1;
 }
 
+.field--type-entity-reference.field--label-inline .field__items .field__item:first-child .node__content {
+    margin-top: 0;
+}
