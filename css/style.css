@@ -153,9 +153,5 @@ em {
 
 .field--type-entity-reference.field--label-inline .field__items {
     flex: 1;
-    margin-left: 1rem;
 }
 
-.field--type-entity-reference.field--label-inline .field__items .node__content.clearfix {
-    margin-top: 0;
-}
