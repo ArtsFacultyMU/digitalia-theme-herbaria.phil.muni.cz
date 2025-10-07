@@ -139,3 +139,14 @@ body.path-frontpage h1.title.page-title {
 em {
 	font-style: italic;
 }
+
+/* align authored on field to right */
+.field--type-created {
+    text-align: right;
+}
+
+/* fix width for inline rendered entity references */
+.field--type-entity-reference.field--label-inline {
+    display: flex;
+    align-items: baseline;
+}
